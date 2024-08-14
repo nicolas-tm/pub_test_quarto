@@ -8,7 +8,8 @@ manuscript:
 format:
   html:
     comments:
-      hypothesis: true
+      giscus: 
+        repo: nicolas-tm/pub_test_quarto
   docx: default
   jats: default
 
