@@ -1,0 +1,44 @@
+---
+title: pub
+authors:
+  - name: Norah Jones
+    affiliation: The University
+    roles: writing
+    corresponding: true
+bibliography: references.bib
+---
+
+## Section
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+
+## Simple graph
+
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+eruptions = [1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021]
+```
+
+```{python}
+#| label: fig-timeline
+#| fig-cap: Timeline of recent earthquakes on La Palma
+#| fig-alt: An event plot of the years of the last 8 eruptions on La Palma.
+
+plt.figure(figsize=(6, 1))
+plt.eventplot(eruptions, lineoffsets=0, linelengths=0.1, color='black')
+plt.gca().axes.get_yaxis().set_visible(False)
+plt.ylabel('')
+plt.show()
+```
+
+
+
+Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+
+$$
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+$$ {#eq-poisson}
+
+where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.

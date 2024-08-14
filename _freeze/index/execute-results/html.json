@@ -1,0 +1,12 @@
+{
+  "hash": "89c4d0dc49dbc995d7690ebc0798120c",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: pub\nauthors:\n  - name: Norah Jones\n    affiliation: The University\n    roles: writing\n    corresponding: true\nbibliography: references.bib\n---\n\n\n\n\n\n\n\n\n## Section\nThis is a simple placeholder for the manuscript's main document [@knuth84].\n\n\n## Simple graph\n\n::: {#c6233e5b .cell execution_count=1}\n``` {.python .cell-code .hidden}\nimport matplotlib.pyplot as plt\nimport numpy as np\neruptions = [1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021]\n```\n:::\n\n\n::: {#cell-fig-timeline .cell execution_count=2}\n``` {.python .cell-code .hidden}\nplt.figure(figsize=(6, 1))\nplt.eventplot(eruptions, lineoffsets=0, linelengths=0.1, color='black')\nplt.gca().axes.get_yaxis().set_visible(False)\nplt.ylabel('')\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Timeline of recent earthquakes on La Palma](index_files/figure-html/fig-timeline-output-1.png){#fig-timeline width=470 height=114 fig-alt='An event plot of the years of the last 8 eruptions on La Palma.'}\n:::\n:::\n\n\n:::{#a13795a4 .cell .markdown}\nLet $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution\n\n$$\np(x) = \\frac{e^{-\\lambda} \\lambda^{x}}{x !}\n$$ {#eq-poisson}\n\nwhere $\\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
