@@ -41,3 +41,4 @@ p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 $$ {#eq-poisson}
 
 where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+

@@ -1,1 +1,1 @@
-{"headings":["section","simple-graph"],"entries":[{"order":{"section":[0,2,0,0,0,0,0],"number":1},"key":"fig-timeline","caption":"Timeline of recent earthquakes on La Palma"},{"order":{"section":[0,2,0,0,0,0,0],"number":1},"key":"eq-poisson","caption":""}]}
+{"entries":[{"key":"fig-timeline","order":{"number":1,"section":[0,2,0,0,0,0,0]},"caption":"Timeline of recent earthquakes on La Palma"},{"key":"eq-poisson","order":{"number":1,"section":[0,2,0,0,0,0,0]},"caption":""}],"headings":["section","simple-graph"]}
