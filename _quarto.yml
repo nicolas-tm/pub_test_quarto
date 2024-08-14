@@ -10,6 +10,10 @@ format:
     comments:
       giscus: 
         repo: nicolas-tm/pub_test_quarto
+        repo-id: R_kgDOMja4iQ
+        category: "Q&A"
+        category-id : "DIC_kwDOMja4ic4Chnu1"
+        mapping : "pathname"
   docx: default
   jats: default
 
